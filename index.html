@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10101a">
+  <meta name="description" content="Discover your vibe with fun personality quizzes.">
+  <title>VibeCheck ✦ Find Your Vibe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">Vibe<span>Check</span><b>✦</b></a>
+    <a class="nav-link" href="#quizzes">Explore quizzes ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pill"><span class="live-dot"></span> YOUR VIBE, YOUR RULES</div>
+      <h1>So... what's your<br><span class="gradient">actual vibe?</span></h1>
+      <p class="hero-text">
+        Fun quizzes. Unexpected results. A little too accurate.
+        Find your vibe and send it to your friends.
+      </p>
+      <a class="primary-button" href="#quizzes">Find my vibe <span>↘</span></a>
+      <div class="hero-note">✦ FREE TO PLAY &nbsp;·&nbsp; MADE FOR YOUR MAIN-CHARACTER ERA</div>
+    </section>
+
+    <section class="quiz-section" id="quizzes">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE VIBE LIBRARY</p>
+          <h2>Pick your <span>personality.</span></h2>
+        </div>
+        <span class="quiz-count">06 QUIZZES</span>
+      </div>
+
+      <div class="quiz-grid">
+        <article class="quiz-card purple">
+          <div class="card-icon">🌙</div>
+          <span class="card-tag">PERSONALITY</span>
+          <h3>What's your real aura?</h3>
+          <p>Discover the energy you bring into every room.</p>
+          <button class="quiz-button" data-quiz="aura">Take the quiz <span>↗</span></button>
+        </article>
+
+        <article class="quiz-card lime">
+          <div class="card-icon">💚</div>
+          <span class="card-tag">FRIENDSHIP</span>
+          <h3>What friend are you?</h3>
+          <p>Find out which iconic friend-group role is yours.</p>
+          <button class="quiz-button" data-quiz="friend">Take the quiz <span>↗</span></button>
+        </article>
+
+        <article class="quiz-card pink">
+          <div class="card-icon">✨</div>
+          <span class="card-tag">FUTURE YOU</span>
+          <h3>Your future aesthetic</h3>
+          <p>What will your next era look and feel like?</p>
+          <button class="quiz-button" data-quiz="future">Take the quiz <span>↗</span></button>
+        </article>
+
+        <article class="quiz-card blue">
+          <div class="card-icon">🎧</div>
+          <span class="card-tag">MUSIC</span>
+          <h3>What song is your life?</h3>
+          <p>Find the soundtrack that matches your energy.</p>
+          <button class="quiz-button" data-quiz="song">Take the quiz <span>↗</span></button>
+        </article>
+
+        <article class="quiz-card orange">
+          <div class="card-icon">🔥</div>
+          <span class="card-tag">SOCIAL ENERGY</span>
+          <h3>What's your social battery?</h3>
+          <p>Party all night or disappear for three business days?</p>
+          <button class="quiz-button" data-quiz="social">Take the quiz <span>↗</span></button>
+        </article>
+
+        <article class="quiz-card mint">
+          <div class="card-icon">💫</div>
+          <span class="card-tag">MAIN CHARACTER</span>
+          <h3>What's your main-character era?</h3>
+          <p>Discover the chapter you're living right now.</p>
+          <button class="quiz-button" data-quiz="era">Take the quiz <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-banner">
+      <span>✳</span>
+      <div>
+        <h2>Your friends think they know you?</h2>
+        <p>Take a quiz, share your result, and let them decide.</p>
+      </div>
+      <a href="#quizzes" class="banner-link">Let's go ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">Vibe<span>Check</span><b>✦</b></a>
+    <p>Made for fun. Your vibe is yours. ✦</p>
+  </footer>
+
+  <div class="modal" id="quizModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close-button" id="closeModal" aria-label="Close quiz">✕</button>
+      <div id="quizContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
